@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import TopNav from "@/app/ui/TopNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nazar Elsayed Portfolio",
-  description: "Nazar Elsayed portfolio website",
+  title: "Nazar Elsayed | Portfolio",
+  description: "Nazar Elsayed portfolio website.",
   authors: [{ name: "Nazar Elsayed" }]
 };
 
@@ -28,7 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+      <TopNav />
+      {children}
       </body>
     </html>
   );
