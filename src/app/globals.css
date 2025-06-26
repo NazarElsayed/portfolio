@@ -1,26 +1,10 @@
-@import "tailwindcss";
-
-:root {
-  --background: theme('colors.white');
-  --foreground: theme('colors.neutral.900');
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: theme('colors.neutral.950');
-    --foreground: theme('colors.neutral.100');
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: theme('colors.neutral.950');
+  color: theme('colors.white');
+  /*noinspection CssUnresolvedCustomProperty*/
+  font-family: var(--font-geist-mono), monospace;
 }
