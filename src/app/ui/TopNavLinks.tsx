@@ -22,9 +22,9 @@ const links = [
 export default function TopNavLinks() {
   return (
     links.map((link) => (
-        <Link key={link.name} href={link.href} className="px-5">
-          {link.name}
-        </Link>
+      <Link key={link.name} href={link.href} className="px-5">
+        {link.name}
+      </Link>
     ))
   )
 }

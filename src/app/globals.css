@@ -6,5 +6,5 @@ body {
   background-color: theme('colors.neutral.950');
   color: theme('colors.white');
   /*noinspection CssUnresolvedCustomProperty*/
-  font-family: var(--font-geist-mono), monospace;
+  font-family: var(--font-geist-sans), sans-serif;
 }
