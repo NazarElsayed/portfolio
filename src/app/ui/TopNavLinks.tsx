@@ -21,11 +21,13 @@ const links = [
 
 export default function TopNavLinks() {
   return (
-    <ul role="menubar" className="flex list-none m-0 p-0">
+    <ul className="flex list-none m-0 p-0 gap-10">
       {links.map((link) => (
-        <Link key={link.name} href={link.href} className="px-5">
-          {link.name}
-        </Link>
+        <li key={link.name}>
+          <Link key={link.name} href={link.href}>
+            {link.name}
+          </Link>
+        </li>
       ))}
     </ul>
   )
