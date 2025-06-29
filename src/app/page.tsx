@@ -3,7 +3,8 @@ import profileImage from './images/Nazar.jpg';
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col md:flex-row-reverse gap-10 md:gap-0 items-center justify-center p-20 min-w-[300px]">
+    <main id="home-content" aria-label="Home content"
+          className="flex flex-col md:flex-row-reverse gap-10 md:gap-0 items-center justify-center p-20 min-w-[300px]">
       <div className="overflow-hidden rounded-full md:m-10 aspect-square w-full min-w-[200px] max-w-[500px]">
         <Image className="transform -translate-y-[8%] object-cover"
           src={profileImage}
